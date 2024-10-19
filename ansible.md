@@ -312,6 +312,29 @@ Tasks triggered by events/notifications
 
 Ansible Roles
 
+re using the code
+
+ansible-galaxy init rolename
+
+/etc/ansible/roles : default dir where ansible check for roles
+
+roles_path= 
+
+ansible-galaxy  list
+ansibl-config dumo | grep ROLE
+
+ansible-galaxy install role -p ./roles
+
+
+Ansible Collections
+
+Package and distribute , roles, plugins
+
+
+Templating
+
+
+
 
 
 
