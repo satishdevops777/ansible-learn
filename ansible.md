@@ -218,6 +218,102 @@ Ansible-linit
 
 Ansible lint is a command line tool that performs linting on ansible playbooks, roles and collections
 
+CONDITIONS
+
+when: ansible_os_family == "redhat" or ansible_os_family == "SUSE"
+
+
+To install multiple packages
+
+loops:
+- joe
+- ram
+- krish
+
+with_items:
+- joe
+- ram
+- mani
+
+with_files:
+- "/etc/hosts"
+- "/etc/resolv/conf"
+
+with_url:
+- "https://site1.com"
+- "https://site2.com"
+
+
+
+ansible modules
+
+system
+user, group, hostnames, iptables, lvg,lvol,make,mount, ping timexone, systemd, service
+
+command
+script
+shell
+
+files
+lineinfile
+replace
+
+database
+mysql
+mongodb etc
+
+cloud
+amazon
+azure
+gcp
+docker
+
+
+windows modules
+
+win_copy
+win_command
+win_domain
+
+ansible plugins
+
+a piece of code that modifies the functionality of ansible
+enhance various aspects of ansible
+
+Inventory 
+modules
+callbacks
+
+Dynamic Inventory Plugin
+Up to date view of infra
+
+Module Plugin
+integrates seemlessly with our cloud api
+
+action plugin
+ssl certificates
+load balancer rules etc.
+
+lookup plugins
+Filter plugins
+connection plugins
+Inventory plugins
+callback Plugins
+
+
+modules & plugins index
+
+cisco.ios
+
+handlers
+
+Tasks triggered by events/notifications
+
+
+Ansible Roles
+
+
+
 
 
 
